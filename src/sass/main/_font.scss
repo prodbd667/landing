@@ -1,0 +1,64 @@
+$url_bold: '../fonts/bold/';
+$url_black: '../fonts/black/';
+$url_regular: '../fonts/regular/';
+$url_thin: '../fonts/thin/';
+$url_light: '../fonts/light/';
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url($url_bold + 'ProximaNova-Bold.eot');
+  src: url($url_bold + 'ProximaNova-Bold.woff2') format('woff2'),
+  url($url_bold + 'ProximaNova-Bold.woff') format('woff'),
+  url($url_bold + 'ProximaNova-Bold.ttf') format('truetype'),
+  url($url_bold + 'ProximaNova-Bold.svg#ProximaNova-Bold') format('svg'),
+  url($url_bold + 'ProximaNova-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url($url_black + 'ProximaNova-Black.eot');
+  src: url($url_black + 'ProximaNova-Black.woff2') format('woff2'),
+  url($url_black + 'ProximaNova-Black.woff') format('woff'),
+  url($url_black + 'ProximaNova-Black.ttf') format('truetype'),
+  url($url_black + 'ProximaNova-Black.svg#ProximaNova-Black') format('svg'),
+  url($url_black + 'ProximaNova-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url($url_regular + 'ProximaNova-Regular.eot');
+  src: url($url_regular + 'ProximaNova-Regular.woff2') format('woff2'),
+  url($url_regular + 'ProximaNova-Regular.woff') format('woff'),
+  url($url_regular + 'ProximaNova-Regular.ttf') format('truetype'),
+  url($url_regular + 'ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'),
+  url($url_regular + 'ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaT-Thin';
+  src: url($url_thin + 'ProximaNovaT-Thin.eot');
+  src: url($url_thin + 'ProximaNovaT-Thin.woff2') format('woff2'),
+  url($url_thin + 'ProximaNovaT-Thin.woff') format('woff'),
+  url($url_thin + 'ProximaNovaT-Thin.ttf') format('truetype'),
+  url($url_thin + 'ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg'),
+  url($url_thin + 'ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url($url_light + 'ProximaNova-Light.eot');
+  src: url($url_light + 'ProximaNova-Light.woff2') format('woff2'),
+  url($url_light + 'ProximaNova-Light.woff') format('woff'),
+  url($url_light + 'ProximaNova-Light.ttf') format('truetype'),
+  url($url_light + 'ProximaNova-Light.svg#ProximaNova-Light') format('svg'),
+  url($url_light + 'ProximaNova-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+

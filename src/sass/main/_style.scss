@@ -1,6 +1,536 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.social-btn {
+  display: flex;
+  i {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.phone-companies {
+  font-size: 18px;
+  color: #000;
+  font-family: 'ProximaNova-Bold';
+}
+
+.request-call {
+  color: #00b0ec;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  border-bottom: 1px solid #00b0ec;
+  &:hover {
+    cursor: pointer;
+    color: #61c8eb;
+  }
+}
+
+.header-section {
+  font-size: 30px;
+  color: #000;
+  font-family: 'ProximaNova-Bold';
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+.header-section__inside {
+  font-size: 18px;
+  color: #000;
+  font-family: 'ProximaNova-Bold';
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.main-slider {
+  .header {
+    font-size: 52px;
+    color: #000;
+    font-family: 'ProximaNova-Bold';
+  }
+  .content {
+    font-size: 18px;
+    color: #132930;
+    font-family: 'ProximaNova-Light';
+  }
+}
+
 .line-header {
   height: 3px;
   width: 99px;
   background: #00b0ec;
   display: inline-block;
+}
+
+.item-service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 67px;
+  .img-item {
+    flex-basis: 70px;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  .text-item {
+    margin-left: 15px;
+    flex-basis: 360px;
+  }
+
+}
+
+.flip-container {
+  perspective: 1000;
+  flex-basis: 25%;
+  margin: 0 10px;
+}
+
+.flip-container:last-child {
+  margin-right: 0;
+}
+
+.flip-container:first-child {
+  margin-left: 0;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  height: 243px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  height: 100%;
+}
+
+.front, .back {
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/**/
+.rates {
+  display: flex;
+}
+
+.stage {
+  display: flex;
+  .stage-item {
+    flex-basis: 25%;
+    .number {
+      color: #535353;
+      font-size: 72px;
+      font-family: 'ProximaNovaT-Thin';
+    }
+    .text {
+      width: 200px;
+      color: #000;
+      font-size: 16px;
+      font-family: 'ProximaNova-Regular';
+    }
+  }
+}
+
+.message {
+  border: 2px solid #ececec;
+  padding: 20px 40px;
+  .header {
+    color: #000;
+    font-size: 18px;
+    font-family: 'ProximaNova-Regular';
+  }
+  .content {
+    padding: 20px 5px 0 5px;
+    color: #a2a2a2;
+    font-size: 16px;
+    font-family: 'ProximaNova-Regular';
+  }
+}
+
+.rate-card {
+  border-radius: 16px;
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 20px 68px 0px rgba(0, 0, 0, 0.16);
+  .header {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    font-family: 'ProximaNova-Black';
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .header__basic {
+    background: #84cce5;
+  }
+  .header__extended {
+    background: #61c8eb;
+  }
+  .header__full {
+    background: #00b0ec;
+  }
+  .option {
+    height: 95px;
+    border-bottom: 2px solid #e8e8e8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .price {
+      color: #474747;
+      font-family: 'ProximaNova-Black';
+      .number {
+        font-size: 24px;
+      }
+      .text {
+        font-size: 16px;
+      }
+    }
+    .specification {
+      color: #959595;
+      font-size: 14px;
+      font-family: 'ProximaNova-Regular';
+
+      width: 190px;
+      text-align: center;
+    }
+  }
+  &:hover {
+    z-index: 10;
+    transform: scale(1, 1.1);
+  }
+
+  .rate-card__items {
+    padding: 18px;
+    .rate-card__item {
+      margin: 0 0 11px 0;
+      display: flex;
+      font-size: 14px;
+      font-family: 'ProximaNova-Regular';
+      .icon {
+        flex-basis: 10px;
+        margin: 6px 8px 0 3px;
+      }
+      span {
+        flex-basis: 260px;
+      }
+    }
+    .rate-card__item--active {
+      color: #000;
+    }
+    .rate-card__item--disable {
+      color: #c3c3c3;
+      margin: 0 0 11px 21px;
+    }
+    .formalization {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.example {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    flex-basis: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .img-item {
+      flex-basis: 70px;
+      margin-right: 15px;
+      text-align: center;
+    }
+    .text-item {
+      margin-left: 15px;
+      flex-basis: 300px;
+      font-size: 18px;
+      color: #000;
+      font-family: 'ProximaNova-Regular';
+    }
+  }
+  .center {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .right {
+    flex-basis: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .img-item {
+      flex-basis: 70px;
+      margin-right: 15px;
+      text-align: center;
+    }
+    .text-item {
+      margin-left: 15px;
+      flex-basis: 300px;
+      font-size: 18px;
+      color: #000;
+      font-family: 'ProximaNova-Regular';
+    }
+  }
+}
+
+.example-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .number {
+    color: #13b6ed;
+    font-size: 36px;
+    font-family: 'ProximaNova-Bold';
+  }
+  .text {
+    font-size: 16px;
+    color: #000;
+    font-family: 'ProximaNova-Regular';
+  }
+}
+
+.conclusion {
+  text-align: center;
+  .equally {
+    color: #13b6ed;
+    font-size: 18px;
+    font-family: 'ProximaNova-Bold';
+  }
+  .number {
+    color: #13b6ed;
+    font-size: 36px;
+    font-family: 'ProximaNova-Bold';
+  }
+  .text {
+    font-size: 16px;
+    color: #000;
+    font-family: 'ProximaNova-Regular';
+  }
+}
+
+.ui-btn {
+  border: 1px solid #00b0ec;
+  border-radius: 15px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.ui-btn-main {
+  color: #00b0ec;
+  .ui-text {
+    font-size: 16px;
+    font-family: 'ProximaNova-Bold';
+    text-transform: uppercase;
+    padding: 11px 27px 12px 28px;
+
+  }
+  &:hover {
+    color: #fff;
+    background: #00b0ec;
+    border-radius: 16px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 176, 236, 0.25);
+  }
+}
+
+.ui-btn-default {
+  height: 40px;
+  width: 100%;
+  color: #fff;
+  background: #00b0ec;
+  &:hover {
+
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  .info-item {
+    display: flex;
+    align-items: center;
+    .icon-wrap {
+      margin-right: 20px;
+    }
+    .text-block {
+      .header {
+        font-family: 'ProximaNova-Bold';
+        font-size: 18px;
+        color: #000;
+        line-height: 1;
+      }
+      .content {
+        font-family: 'ProximaNova-Regular';
+        font-size: 18px;
+        color: #000;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+.callback {
+  padding: 40px 20px;
+  .input-block {
+    display: flex;
+    justify-content: center;
+    input {
+      flex-basis: 50%;
+      height: 40px;
+      border: 1px solid #dadada;
+      border-radius: 16px;
+      box-sizing: border-box;
+      outline: none;
+      padding-left: 20px;
+    }
+  }
+}
+
+/**/
+.service-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .step {
+    flex-basis: 255px;
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+
+      .text {
+        text-align: center;
+        font-size: 18px;
+        color: #000;
+        font-family: 'ProximaNova-Light';
+      }
+    }
+  }
+}
+
+#top_nav {
+  top: 54px; /*высота шапки в пикселях*/
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  nav {
+    background: #fff;
+    .container-fluid {
+      padding: 0;
+    }
+    .logo-link {
+      display: flex;
+      height: 84px;
+      align-items: center;
+      -webkit-transition: height 0.5s;
+      -moz-transition: height 0.5s;
+      -o-transition: height 0.5s;
+      transition: height 0.5s;
+    }
+  }
+}
+
+#top_nav.action-menu {
+  nav {
+    .logo-link {
+      height: 58px;
+    }
+    .navbar-nav {
+      height: 58px;
+    }
+  }
+}
+
+.top-menu {
+  display: flex;
+  height: 84px;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  height: 84px;
+  align-items: center;
+  list-style-type: none;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.navbar-nav > li {
+  margin: 0 15px;
+}
+
+.navbar-nav > li:first-child {
+  margin: 0 15px 0 0;
+}
+
+.navbar-nav > li:last-child {
+  margin: 0 0 0 15px;
+}
+
+.navbar-nav > li > a {
+  padding: 10px 0;
+  color: #000;
+  font-family: 'ProximaNova-Bold';
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    border-bottom: 2px solid #00b0ec;
+  }
+}
+
+.navbar-nav > li > a.active {
+  border-bottom: 2px solid #00b0ec;
 }
